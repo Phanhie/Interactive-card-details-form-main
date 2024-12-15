@@ -13,13 +13,13 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="w-full font-display">
-  <div class="flex items-center justify-center">
+<body class="w-full font-display ">
+  <div class="flex items-center justify-center relative">
     <div class="w-2/5">
       <img class="h-8h w-4h" src="images/bg-main-desktop.png">
     </div>
 
-    <div class="w-3/5 flex items-center justify-center">
+    <div class=" ml-20 w-3/5 flex items-center justify-center">
       <form class="">
         <div class="flex flex-col">
           <label class="font-bold" for="Card-number">Cardholder Name</label>
@@ -31,10 +31,10 @@
           <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 1234 5678 9123 0000">
         </div>
         
-        <div class="flex items-center justify-between mt-5"> 
+        <div class="flex items-center justify-between  gap-2 mt-5"> 
           <div class="flex flex-col ">
             <label class="font-bold"  for="Exp-date">Exp. Date (MM/YY)</label>
-            <input class="w-1/2 border-2 rounded-md p-2 mt-2" type="date">
+            <input class="border-2 rounded-md p-2 mt-2" type="date">
           </div>
           
           <div class="flex flex-col  ">
@@ -48,26 +48,25 @@
       </form>
     </div>
   </div>
-
-  <div class="bg-cover bg-center bg-no-repeat bg-local bg-[url('images/bg-card-front.png')] h-48 w-96 rounded-lg flex flex-col justify-end p-6">
-    <p class="text-white text-lg font-bold">JANE APPLESEED</p>
-    <p class="text-white text-sm">0000 0000 0000 0000</p>
-    <p class="text-white text-sm">00/00</p>
-  </div>
   
-  <div class="bg-cover bg-center bg-no-repeat bg-local text-white m-5" style="background-image: url('images/bg-card-front.png'); height: 400px; width: 550px;">
+  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute left-24 top-10" style="background-image: url('images/bg-card-front.png'); height: 250px; width: 500px;">
     <div>
-      <img class="p-2" src="images/card-logo.svg">
+      <img class="p-5" src="images/card-logo.svg">
     </div>
-    <p class="mt-10"> 0000 0000 0000 0000</p>
-    <div class="">
+    <div class=" flex items-center justify-around mt-12 text-center font-light text-3xl ">
+    <p > 0000 </p>
+    <p > 0000 </p>
+    <p > 0000 </p>
+    <p > 0000 </p>
+    </div>
+    <div class=" flex items-center justify-between w-4h text-xl p-7  font-light">
       <p> Jane Appleseed</p>
       <p> 00/00</p>
     </div>
   </div>
 
-  <div class="bg-no-repeat" style="background-image: url('images/bg-card-back.png'); height: 350px;">
-    <p>000</p>
+  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute left-48 top-80" style="background-image: url('images/bg-card-back.png'); height: 250px; width: 500px;">
+    <p class="text-center mt-28 ml-72 font-bold">000</p>
   </div>
  
  

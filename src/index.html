@@ -13,34 +13,73 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="">
+<body class="w-full font-display">
+  <div class="flex items-center justify-center">
+    <div class="w-2/5">
+      <img class="h-8h w-4h" src="images/bg-main-desktop.png">
+    </div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <div class="w-3/5 flex items-center justify-center">
+      <form class="">
+        <div class="flex flex-col">
+          <label class="font-bold" for="Card-number">Cardholder Name</label>
+          <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. Jane Appleseed">
+        </div>
 
-  000
+        <div class="flex flex-col mt-5">
+          <label class="font-bold"  for="Card-number">Card Number</label>
+          <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        
+        <div class="flex items-center justify-between mt-5"> 
+          <div class="flex flex-col ">
+            <label class="font-bold"  for="Exp-date">Exp. Date (MM/YY)</label>
+            <input class="w-1/2 border-2 rounded-md p-2 mt-2" type="date">
+          </div>
+          
+          <div class="flex flex-col  ">
+            <label class="font-bold"  for="CVC">CVC</label>
+            <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 123">
+          </div>
+        </div>
+        
+        
+        <button class="text-center bg-d-violet text-white mt-10 h-11 rounded-md w-full">Confirm</button>
+      </form>
+    </div>
+  </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+  <div class="bg-cover bg-center bg-no-repeat bg-local bg-[url('images/bg-card-front.png')] h-48 w-96 rounded-lg flex flex-col justify-end p-6">
+    <p class="text-white text-lg font-bold">JANE APPLESEED</p>
+    <p class="text-white text-sm">0000 0000 0000 0000</p>
+    <p class="text-white text-sm">00/00</p>
+  </div>
+  
+  <div class="bg-cover bg-center bg-no-repeat bg-local text-white m-5" style="background-image: url('images/bg-card-front.png'); height: 400px; width: 550px;">
+    <div>
+      <img class="p-2" src="images/card-logo.svg">
+    </div>
+    <p class="mt-10"> 0000 0000 0000 0000</p>
+    <div class="">
+      <p> Jane Appleseed</p>
+      <p> 00/00</p>
+    </div>
+  </div>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+  <div class="bg-no-repeat" style="background-image: url('images/bg-card-back.png'); height: 350px;">
+    <p>000</p>
+  </div>
+ 
+ 
+  
 
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+ 
 
   <!-- Completed state start -->
 
-  Thank you!
+  <!-- Thank you!
   We've added your card details
-  Continue
+  Continue -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

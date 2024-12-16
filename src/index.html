@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -14,9 +14,10 @@
   </style>
 </head>
 <body class="w-full font-display ">
-  <div class="flex items-center justify-center relative">
+  <div class="flex items-center justify-center relative md:static">
     <div class="w-2/5">
-      <img class="h-8h w-4h" src="images/bg-main-desktop.png">
+      <img src="images/bg-main-desktop.png" class="hidden sm:block h-8h w-4h" >
+      <img src="images/bg-main-mobile.png" class="block sm:hidden w-full">
     </div>
 
     <div class=" ml-20 w-3/5 flex items-center justify-center">
@@ -56,7 +57,7 @@
     </div>
   </div>
   
-  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute left-24 top-10" style="background-image: url('images/bg-card-front.png'); height: 250px; width: 500px;">
+  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute md:static left-24 top-10 " style="background-image: url('images/bg-card-front.png'); height: 250px; width: 500px;">
     <div>
       <img class="p-5" src="images/card-logo.svg">
     </div>
@@ -72,7 +73,7 @@
     </div>
   </div>
 
-  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute left-48 top-80" style="background-image: url('images/bg-card-back.png'); height: 250px; width: 500px;">
+  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute md:static left-48 top-80 " style="background-image: url('images/bg-card-back.png'); height: 250px; width: 500px;">
     <p class="text-center mt-28 ml-72 font-bold">000</p>
   </div>
  

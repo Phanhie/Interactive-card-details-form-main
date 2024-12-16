@@ -31,18 +31,25 @@
           <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 1234 5678 9123 0000">
         </div>
         
-        <div class="flex items-center justify-between  gap-2 mt-5"> 
-          <div class="flex flex-col ">
-            <label class="font-bold"  for="Exp-date">Exp. Date (MM/YY)</label>
-            <input class="border-2 rounded-md p-2 mt-2" type="date">
+        <div class="flex items-center justify-between  gap-2 mt-5">
+           
+            <div class="flex items-center justify-between w-full">
+              <div class="flex flex-col gap-2 w-1/2">
+                <label class="font-bold"  for="Exp-date">Exp. Date (MM/YY)</label>
+                <div>
+                  <input type="text" id="exp-month" placeholder="MM" maxlength="2" class=" p-2 w-20 border-2 border-gray-300 rounded-md">
+                  <input type="text" id="exp-year" placeholder="YY" maxlength="2" class=" p-2 w-20 border-2 border-gray-300 rounded-md">
+              
+                </div>
+              </div>
+            
+            <div class="flex flex-col w-1/2 ">
+              <label class="font-bold"  for="CVC">CVC</label>
+              <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 123">
+            </div>
           </div>
           
-          <div class="flex flex-col  ">
-            <label class="font-bold"  for="CVC">CVC</label>
-            <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 123">
-          </div>
-        </div>
-        
+            </div>
         
         <button class="text-center bg-d-violet text-white mt-10 h-11 rounded-md w-full">Confirm</button>
       </form>

@@ -7,7 +7,8 @@ module.exports = {
         '8h': '730px'
       },
       width: {
-        '4h': '500px'
+        '4h': '500px',
+        '85' : '350px'
       },
       colors:{
         'd-violet': 'hsl(278, 68%, 11%)'
@@ -16,8 +17,11 @@ module.exports = {
         'display': ['Space Grotesk']
       },
       backgroundImage: {
-        'cardFront': "url('src/images/bg-card-front.png')",
-    }
+        'hero-mobile': "url('src/images/bg-main-mobile.png')",
+      },
+      margin:{
+        '22': '85px'
+      }
   },
   plugins: [],
  }

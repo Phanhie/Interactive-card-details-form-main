@@ -14,29 +14,29 @@
   </style>
 </head>
 <body class="w-full font-display ">
-  <div class="flex items-center justify-center relative md:static">
-    <div class="w-2/5">
-      <img src="images/bg-main-desktop.png" class="hidden sm:block h-8h w-4h" >
-      <img src="images/bg-main-mobile.png" class="block sm:hidden w-full">
+  <div class="flex items-center justify-center relative max-sm:block">
+    <div class="w-2/5 max-sm:w-full">
+      <img src="images/bg-main-desktop.png" class="hidden sm:block h-8h w-4h " >
+      <img src="images/bg-main-mobile.png" class="block sm:hidden max-sm:w-full h-80">
     </div>
 
-    <div class=" ml-20 w-3/5 flex items-center justify-center">
+    <div class=" ml-20 w-3/5 flex items-center justify-center max-sm:w-full max-sm:ml-0 max-sm:mt-20 max-sm:py-7 max-sm:px-5">
       <form class="">
         <div class="flex flex-col">
-          <label class="font-bold" for="Card-number">Cardholder Name</label>
-          <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. Jane Appleseed">
+          <label class="font-bold max-sm:text-xl" for="Card-name">Cardholder Name</label>
+          <input id="Card-name" required class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. Jane Appleseed">
         </div>
 
         <div class="flex flex-col mt-5">
-          <label class="font-bold"  for="Card-number">Card Number</label>
-          <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 1234 5678 9123 0000">
+          <label class="font-bold max-sm:text-xl"  for="Card-number">Card Number</label>
+          <input id="Card-number" class="border-2 rounded-md p-2 mt-2" type="number" placeholder="e.g. 1234 5678 9123 0000">
         </div>
         
         <div class="flex items-center justify-between  gap-2 mt-5">
            
             <div class="flex items-center justify-between w-full">
               <div class="flex flex-col gap-2 w-1/2">
-                <label class="font-bold"  for="Exp-date">Exp. Date (MM/YY)</label>
+                <label class="font-bold max-sm:text-xl"  for="Exp-date">Exp. Date (MM/YY)</label>
                 <div>
                   <input type="text" id="exp-month" placeholder="MM" maxlength="2" class=" p-2 w-20 border-2 border-gray-300 rounded-md">
                   <input type="text" id="exp-year" placeholder="YY" maxlength="2" class=" p-2 w-20 border-2 border-gray-300 rounded-md">
@@ -45,19 +45,19 @@
               </div>
             
             <div class="flex flex-col w-1/2 ">
-              <label class="font-bold"  for="CVC">CVC</label>
+              <label class="font-bold max-sm:text-xl"  for="CVC">CVC</label>
               <input class="border-2 rounded-md p-2 mt-2" type="text" placeholder="e.g. 123">
             </div>
           </div>
           
             </div>
         
-        <button class="text-center bg-d-violet text-white mt-10 h-11 rounded-md w-full">Confirm</button>
+        <button class="text-center bg-d-violet text-white mt-10 h-11 rounded-md w-full max-sm:mt-6 max-sm:text-xl max-sm:h-14 max-sm:rounded-lg">Confirm</button>
       </form>
     </div>
   </div>
   
-  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute md:static left-24 top-10 " style="background-image: url('images/bg-card-front.png'); height: 250px; width: 500px;">
+  <div class="hidden sm:block bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute left-24 top-10 " style="background-image: url('images/bg-card-front.png'); height: 250px; width: 500px;">
     <div>
       <img class="p-5" src="images/card-logo.svg">
     </div>
@@ -73,10 +73,31 @@
     </div>
   </div>
 
-  <div class="bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute md:static left-48 top-80 " style="background-image: url('images/bg-card-back.png'); height: 250px; width: 500px;">
+  <div class="hidden sm:block bg-cover bg-center bg-no-repeat bg-local   text-white rounded-lg m-5 absolute left-48 top-80 w-40 " style="background-image: url('images/bg-card-back.png'); height: 250px; width: 500px;">
     <p class="text-center mt-28 ml-72 font-bold">000</p>
   </div>
+
+  <!-- Breakpoint Image hidden and displayed on smaller screen -->
  
+  <div class="block sm:hidden bg-cover bg-center bg-no-repeat bg-local   text-white rounded-lg m-5 absolute left-8 top-11 " style="background-image: url('images/bg-card-back.png'); height: 200px; width: 350px;">
+    <p class="text-center text-xl mt-22 ml-64 font-bold">000</p>
+  </div>
+
+  <div class=" block sm:hidden bg-cover bg-center bg-no-repeat bg-local text-white rounded-lg m-5 absolute left-0 top-40 " style="background-image: url('images/bg-card-front.png'); height: 200px; width:350px;">
+    <div>
+      <img class="p-5" src="images/card-logo.svg">
+    </div>
+    <div class=" flex items-center justify-around mt-7 mb-2 px-4 text-center font-light text-3xl ">
+    <p > 0000 </p>
+    <p > 0000 </p>
+    <p > 0000 </p>
+    <p > 0000 </p>
+    </div>
+    <div class=" flex items-center justify-between w-85 text-xl px-4 font-light">
+      <p> Jane Appleseed</p>
+      <p> 00/00</p>
+    </div>
+  </div>
  
   
 

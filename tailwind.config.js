@@ -11,7 +11,8 @@ module.exports = {
         '85' : '350px'
       },
       colors:{
-        'd-violet': 'hsl(278, 68%, 11%)'
+        'd-violet': 'hsl(278, 68%, 11%)',
+        'Dg-violet': 'hsl(279, 6%, 55%)'
       },
       fontFamily:{
         'display': ['Space Grotesk']
@@ -21,6 +22,9 @@ module.exports = {
       },
       margin:{
         '22': '85px'
+      },
+      letterSpacing:{
+        'big' : '0.2em'
       }
   },
   plugins: [],
